@@ -13,5 +13,17 @@ public class Main {
 
     System.out.println("Цифра 5 введена успешно");
 
+    abob();
+    }
+
+    public static void abob() {
+        int i = 0;
+        while(true) {
+            i++;
+            System.out.println(i);
+            if(i == 500) {
+                break;
+            }
+        }
     }
 }
