@@ -3,33 +3,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+      // calc area of a rect
+        double width = 0;
+        double height = 0;
+        double area = 0;
+
         Scanner scanner = new Scanner(System.in);
 
-        // get the name of a user
-        System.out.print("Enter your name: ");
-        String name = scanner.nextLine(); //.next if you want to avoid spaces
+        System.out.println("Enter the width: ");
+        width = scanner.nextDouble();
 
-        // get the age of a user
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
-        scanner.nextLine();
+        System.out.println("Enter the height: ");
+        height = scanner.nextDouble();
 
-        System.out.println("Are you a student? (true/false): ");
-        boolean isStudent = scanner.nextBoolean();
+        area = width * height;
 
-        double gpa = 0;
-        if(isStudent) {
-            // get the gpa of a user
-            System.out.print("Enter your GPA: ");
-            gpa = scanner.nextDouble();
-        }
+        System.out.println("RESULT: " + area + " cm²");
 
-        // output the data
-        System.out.println("Hello, " + name);
-        System.out.println("You are " + age + " years old.");
-        if(isStudent) {
-            System.out.println("You are a student and your GPA is: " + gpa);
-        }
 
         scanner.close();
     }
