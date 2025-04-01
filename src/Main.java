@@ -1,37 +1,25 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
 
-    Scanner scanner = new Scanner(System.in);
-    int value;
-    do {
-        System.out.print("Введи 5: ");
-        value = scanner.nextInt();
-    }
-    while(value!=5);
+       System.out.print("Enter your age: ");
+       int age = scanner.nextInt();
 
-    System.out.println("Цифра 5 введена успешно");
-
-    abob();
-    }
-
-    public static void abob() {
-        int i = 0;
-        while(true) {
-            i++;
-            System.out.println(i);
-            if(i == 500) {
-                break;
-            }
-        }
-
-        for(int l = 0; l < 100; l++) {
-            if(l%2==0) {
-                // it skips the rest of the part of the cycle body
-                continue;
-            }
-            System.out.println("Нечетное:" + l);
-        }
-    }
+       switch (age) {
+           case 10:
+               System.out.println("You most likely learning at school.");
+               break;
+           case 18:
+               System.out.println("You ended up school.");
+               break;
+           default:
+               System.out.println("Provide either 10 or 18.");
+               main(args);
+               scanner.close();
+               break;
+       }
+       scanner.close();
+   }
 }
