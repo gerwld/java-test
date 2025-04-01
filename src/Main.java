@@ -1,29 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-       // declaration
-        int age;
-        double agedoub;
-        char grade;
+        /*
+        primitives: STACK(double int char boolean) - stored in memory
+        reference values: HEAP(string, array, object) - memory access, not written directly in memory
+         */
 
-        // assignment
-        age = 26;
-        agedoub = -25.5;
-        grade = 'A';
+        // string is a series of chars, that's why its heap
+        String name = "some string";
+        String food = "another one";
+        String email = "pjaworskidev@gmail.com";
 
-        // sout
-        System.out.println(grade);
-
-        boolean isStudent = true;
-
-        System.out.println(isStudent);
-
-        // if statements
-        if(isStudent == true) {
-            System.out.println("You're a student");
-        }
-        else {
-            System.out.println("Buy IDEA");
-        }
+        System.out.println("Email: " + email);
     }
 }
