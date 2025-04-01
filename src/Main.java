@@ -2,25 +2,19 @@ import java.util.Arrays;
 
 public class Main {
    public static void main(String[] args) {
-     String f = new String("3");
-//     System.out.println(f);
 
-     // инициализация массива чисел numbers, которая содержит
-     // ccылку на новый обьект класса массив (?) с размером 5
-     int[] numbers = new int[5];
+       int[] number = {1,2,3}; // одномерный массив
+       int[][] matrix = {{1,2,3},
+                         {4,5,6}}; // двумерный массив
+       int[][][] shlopix = {{{1},{1}}, {{1}, {1}}}; // трехмерный массив
 
-     numbers[0] = 10;
 
-     // инициализация в цикле
-     for (int i = 0; i<numbers.length; i++) {
-        numbers[i] = i+1;
-     }
-
-     // инициализация заранее
-     int[] numbers1 = {1,2,3};
-
-       for (int i : numbers1) {
-           System.out.println(i);
+       for (int[] ints : matrix) {
+           for (int anInt : ints) {
+               System.out.println(anInt);
+           }
        }
+
+
    }
 }
