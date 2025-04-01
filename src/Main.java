@@ -25,5 +25,13 @@ public class Main {
                 break;
             }
         }
+
+        for(int l = 0; l < 100; l++) {
+            if(l%2==0) {
+                // it skips the rest of the part of the cycle body
+                continue;
+            }
+            System.out.println("Нечетное:" + l);
+        }
     }
 }
