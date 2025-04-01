@@ -1,25 +1,26 @@
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
    public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
+     String f = new String("3");
+//     System.out.println(f);
 
-       System.out.print("Enter your age: ");
-       int age = scanner.nextInt();
+     // инициализация массива чисел numbers, которая содержит
+     // ccылку на новый обьект класса массив (?) с размером 5
+     int[] numbers = new int[5];
 
-       switch (age) {
-           case 10:
-               System.out.println("You most likely learning at school.");
-               break;
-           case 18:
-               System.out.println("You ended up school.");
-               break;
-           default:
-               System.out.println("Provide either 10 or 18.");
-               main(args);
-               scanner.close();
-               break;
+     numbers[0] = 10;
+
+     // инициализация в цикле
+     for (int i = 0; i<numbers.length; i++) {
+        numbers[i] = i+1;
+     }
+
+     // инициализация заранее
+     int[] numbers1 = {1,2,3};
+
+       for (int i : numbers1) {
+           System.out.println(i);
        }
-       scanner.close();
    }
 }
