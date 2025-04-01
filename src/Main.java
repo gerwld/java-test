@@ -1,26 +1,32 @@
 import java.util.Scanner;
 
-
 public class Main {
     public static void main(String[] args) {
-      // calc area of a rect
-        double width = 0;
-        double height = 0;
-        double area = 0;
+        //shopping cart
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the width: ");
-        width = scanner.nextDouble();
+        String item;
+        double price;
+        int quantity;
+        char currency = '$';
+        double total;
 
-        System.out.println("Enter the height: ");
-        height = scanner.nextDouble();
+        System.out.print("What item would you like to buy? ");
+        item = scanner.nextLine();
 
-        area = width * height;
+        System.out.print("How much does it cost? ");
+        price = scanner.nextDouble();
+        scanner.nextLine();
 
-        System.out.println("RESULT: " + area + " cm²");
+        System.out.print("What is the total count you want? ");
+        quantity = scanner.nextInt();
+        scanner.nextLine();
+
+        total = quantity * price;
+
+        System.out.println("\nYou have bougth " + quantity + " " + item + "/s " + price + " each, \nYour total is " + currency + total);
 
 
-        scanner.close();
     }
 }
