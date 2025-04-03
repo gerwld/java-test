@@ -7,5 +7,7 @@ public class Lesson23 {
         sb.append(" my").append(" friend.");
 
         System.out.println(sb.toString());
+
+        
     }
 }
