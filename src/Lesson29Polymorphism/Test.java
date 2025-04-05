@@ -2,8 +2,19 @@ package Lesson29Polymorphism;
 
 public class Test {
     public static void main(String[] args) {
+
         Animal animal = new Dog();
         Dog dog = new Dog();
+
+        // Upcasting - восходящее преобразование
+        Animal animal1 = dog;
+
+        // Downcasting
+        Dog dog2 = (Dog) animal1;
+
+
+
+
 
         // переменная animal типа Animal не имеет доступа к методам класса Dog
         // animal.bark();
@@ -22,6 +33,8 @@ public class Test {
         // а не от типа переменной, ссылающейся на этот обьект.
         //
         // вроде понял.
+
+
 
     }
 }
