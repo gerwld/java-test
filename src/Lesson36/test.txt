@@ -1,0 +1,3 @@
+Some text
+New text
+Next line text
