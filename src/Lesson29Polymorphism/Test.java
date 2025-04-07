@@ -3,8 +3,8 @@ package Lesson29Polymorphism;
 public class Test {
     public static void main(String[] args) {
 
-        Animal animal = new Dog();
-        Dog dog = new Dog();
+        Animal animal = new Dog(0);
+        Dog dog = new Dog(1);
 
         // Upcasting - восходящее преобразование
         Animal animal1 = dog;
