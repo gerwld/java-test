@@ -5,6 +5,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        double probability = (double) 1/ (double) 5;
+        System.out.println(probability);
+
+
+
         ///// java <5, до дженериков /////
         List animals = new ArrayList(); // хранит в себе обьекты класса Object
         animals.add("frog");
